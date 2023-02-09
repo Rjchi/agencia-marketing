@@ -1,7 +1,8 @@
 # agencia_marketing
+
 -1. Buscar un dominio gratis o comprarlo
 
-DJANGO
+DJANGO (install extension wappalyzer)
 
 0. Pagina para el despliege render.com
 0.1. Verificar el soporte a largo plazo de django (django lts)
@@ -49,6 +50,7 @@ DJANGO
 
 
 REACT
+-1. Instalar las extensiones redux Devtools y react Develop tools
 0. Podemos tener tantos frontends como queramos y seguir llamando al mismo backend(un backend para varios frontends)
 1. Nos ubicamos en el Desktop y aqui ejecutamos npx create-react-app Nombre
 2. Ahora abrimos el proyecto de react y copiamos public, src y packaje.json y lo pegamos en carpeta_contenedora/carpeta_de_django (aqui)
@@ -61,8 +63,35 @@ REACT
 5. Ahora en la consola donde tenemos el venv activado ejecutamos python manage.py collectstatic con esto se nos generara una carpeta
 	static (esta contiene todo lo necesario para poder visualizar lo que tenemos en react)
 6. Modificamos las templates de settings.py y enrutamos a la carpeta build
-7. 
+7. Ahora creamos una carpeta que se llame src/assets y dentro de ella una que se llame assets/img/ y src/styles/ y movemos el index.css a styles
+	y tambien creamos assets/video assets va a contener las imagenes estaticas y los videos estaticos que queremos mostrar de la pagina
+8. Ahora en src creamos una carpeta llamada containers - components (los componentes se ponen dentro de containers(contiene las paginas con los 
+	componentes)) y creamos  (este va a contener todos los containers es como un contenedor mayor)
+9. Ahora dentro de container creamos unas carpetas llamadas pages y errors(paginas de errores)
+10. Ahora dentro de src creamos una carpeta llamada redux y dentro redux/actions y tambien redux/reducers
+11. Ahora en el terminal de react instalamos tailwindCSS npm install -D tailwindcss ver https://tailwindcss.com/docs/guides/create-react-app
+12. Ahora en el terminal de react ejecutamos npx tailwindcss init y ahora modificamos el content en tailwind.config ver documentacion
+13. Ahora en el index.css pegar: 
+	(@tailwind base;
+	@tailwind components;
+	@tailwind utilities;)
+14. Ahora para gestionar las rutas instalamos npm i react-router-dom
+15. Y tambien instalamos npm i redux redux-thunk react-redux redux-devtools-extension react-router-dom axios     axios (es para hacer llamados a API
+	de django(nuestra API) y redux es para guardar el estado de nuestras variables)
+	
+	Redux es un contenedor de variables de estado (con estado nos referimos a como se encuentran nuestras variables hasta el momento)
+	estas variables bienen en formato json con redux el estado se mantiene hasta que se refresca la pagina cosa que una pagina hecha 
+	por ejemplo con wordpres no hace (A que nos referimos: Con redux solo se hace un request al servidor y guardamos el respons en el store
+	cosa que cuando desde distintas vistas necesitemos el respons podemos acceder al store y traerlo / en wordpres se volveria ha hacer un request al 
+	servidor)
 
+16. Ahora instalamos typescript ejecutando npm i typescript (esto es otra version de js)
+17. Creamos un nuevo archivo tsconfig.json (aqui indicamos la configuracion de typescript en nuestro proyecto)
+18. Ahora creamos un nuevo archivo en redux/reducers llamado index.js
+19. Ahora en src/containers/pages creamos un archivo llamado Home.jsx
+20. Ahora dentro de containers/errors creamos un archivo llamado Error404.jsx
+21. Ahora dentro de src creamos un nuevo archivo llamado store.js
+22.
 
 
 
