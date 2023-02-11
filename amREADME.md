@@ -1,8 +1,9 @@
 # agencia_marketing
 
+-2. https://hackmd.io/@hO2SXm4mSWyG_s4Yjj73sA/SJcbciEFo
 -1. Buscar un dominio gratis o comprarlo
 
-DJANGO (install extension wappalyzer)
+DJANGO (install extension wappalyzer, what font, color picker o finder)
 
 0. Pagina para el despliege render.com
 0.1. Verificar el soporte a largo plazo de django (django lts)
@@ -91,7 +92,55 @@ REACT
 19. Ahora en src/containers/pages creamos un archivo llamado Home.jsx
 20. Ahora dentro de containers/errors creamos un archivo llamado Error404.jsx
 21. Ahora dentro de src creamos un nuevo archivo llamado store.js
-22.
+22. Ahora en hocs creamos una carpeta llamada layouts
+23. Ahora creamos dentro de hocs/routes (va a contener las rutas privadas)
+23.1 Siempre es bueno dibujar primero lo que queremos tener en la pagina en este caso vamos a utilizar https://miro.com/app/dashboard/
+24. Ahora dentro de layouts creamos un Layout.js
+25. Ahora dentro de components creamos una carpeta llamada navegation y dentro de esta un archivo llamado Navbar.js
+26. Ahora dentro de components/Footer.js (estos componentes los vamos a llamar desde la pagina donde los necesitemos en este caso se llamaron desde Home)
+27. Creamos una carpeta llamada taildwin_components en directorio base y creamos un archivo llamado Footer.jsx y pegamos un componente que nos proporciona
+	taildwin para el footer
+28. Ahora creamos dentro de taildwin_components/head.jsx y pegamos codigo de un componente que nos proporciona taildwid UI (de paga) para la cabecera
+29. Ahora dentro de assets/img creamos un logo con extension png y lo ponemos ahi
+Nota: Para poner un gif en un boton podemos visitar https://tenor.com/es/ y copiamos el href https://tenor.com/search/discord+loading+dots-stickers
+	o lo descargamos y lo agregamos a la carpeta assets/img
+30. Ahora en containers/pages/ creamos unas nuevas vistas llamas Cases.jsx, Services.jsx, About.jsx, Careers.jsx, Blog.jsx, Contact.jsx
+31. Ahora instalamos npm i react-spinners (cmd react) ver https://www.npmjs.com/package/react-spinners (para reemplazar el gif)
+32. Ahora en tailwid_components creamos un nuevo archivo llamado HomeHeader.jsx y pegamos el codigo del componente que nos proporciona tailwind
+33. Ahora en components creamos una nueva carpeta llamada home y dentro de ella un nuevo archivo llamado Header.js
+34. Ahora instalamos npm i simple-react-typewriter (para mostrar texto que se auto escribe en la pagina) ver 
+	https://react-simple-typewriter.vercel.app/?path=/story/examples-typewriter--example
+35. Ahora creamos un archivo en tailwind_components que se llame Incentive.jsx
+36. Ahora en components/home/ creamos un archivo llamado Incentives.js y copiamos el codigo del componente que nos proporciona tailwind UI
+37. Ahora en tailwind_components/ agregamos un nuevo archivo llamado BlogSection.jsx
+38. Ahora en home creamos un archivo llamado UseCases.js en home y pegamos el codigo del componente que nos proporciona tailwind UI
+39. Ahora en tailwind_components/ agreganos otro archivo llamado Features1.jsx
+40. Ahora en home creamos un archivo llamado Features.js en home y pegamos el codigo del componente que nos proporciona tailwind UI
+41. Ahora en el cmd de react instalamos npm i @heroicons/react (para hacer uso de iconos) y npm i @headlessui/react
+42. Ahora en el cmd de react instalamos npm i @tailwindcss/forms @tailwindcss/typography @tailwindcss/line-clamp @tailwindcss/aspect-ratio
+43. Ahora en tailwind_components/ creamos un nuevo archivo llamado CTA1.jsx
+44. Ahora en home creamos un archivo llamado CTA.js en home y pegamos el codigo del componente que nos proporciona tailwind UI (el de tailwind_components)
+	y lo llamamos en el Home.jsx (como los de antes)
+45. Ahora en tailwind_components/ creamos un nuevo archivo llamado LogoCloud.1jsx
+46. Ahora en home creamos un archivo llamado LogoCloud.js en home y pegamos el codigo del componente que nos proporciona tailwind UI (el de tailwind_components)
+47. Ahora en tailwind_components/ creamos un nuevo archivo llamado BlogList.jsx
+48. Ahora en home creamos un archivo llamado BlogList.js en home y pegamos el codigo del componente que nos proporciona tailwind UI (el de tailwind_components)
+49. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
