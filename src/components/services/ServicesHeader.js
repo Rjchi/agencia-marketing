@@ -1,29 +1,5 @@
-import { connect } from "react-redux";
-import { Link } from "react-router-dom";
-
-const navigation = {
-  solutions: [
-    { name: "Marketing", href: "#" },
-    { name: "Analytics", href: "#" },
-    { name: "Commerce", href: "#" },
-    { name: "Insights", href: "#" },
-  ],
-  support: [
-    { name: "Contacto", href: "/contacto" },
-  ],
-  company: [
-    { name: "Casos", href: "/casos" },
-    { name: "Servicios", href: "/servicios" },
-    { name: "Nosotros", href: "/nosotros" },
-    { name: "Carreras", href: "/carreras" },
-    { name: "Blog", href: "/blog" },
-  ],
-  legal: [
-    { name: "Claim", href: "#" },
-    { name: "Privacy", href: "#" },
-    { name: "Terms", href: "#" },
-  ],
-  social: [
+const ServicesHeader = () => {
+  const social = [
     {
       name: "Facebook",
       href: "#",
@@ -85,125 +61,66 @@ const navigation = {
         </svg>
       ),
     },
-  ],
-};
+  ];
 
-const Footer = () => {
   return (
-    <footer className="bg-gray-100" aria-labelledby="footer-heading">
-      <h2 id="footer-heading" className="sr-only">
-        Footer
-      </h2>
-      <div className="mx-auto max-w-6xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-        <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          <div className="space-y-8 xl:col-span-1">
-            <img
-              src="https://media.tenor.com/9xx5jJaHPpIAAAAd/fat-guy.gif"
-              width={70}
-              height={60}
-              className=""
-            />
-            <p className="text-base text-gray-500">
-              Making the world a better place through constructing elegant
-              hierarchies.
-            </p>
-            <div className="flex space-x-6">
-              {navigation.social.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="text-gray-400 hover:text-gray-500"
-                >
-                  <span className="sr-only">{item.name}</span>
-                  <item.icon className="h-6 w-6" aria-hidden="true" />
-                </a>
-              ))}
+    <main>
+      <div className="relative px-6 lg:px-8">
+        <div className="mx-auto max-w-5xl xl:pt-40 xl:pb-30 lg:pt-40 lg:pb-48 pt-24 pb-12">
+          <div>
+            <div>
+              <h1 className="text-4xl font-semibold tracking-tight pb-16 sm:text-5xl">
+                Software Development Services
+              </h1>
+              <p className="mt-6 mb-20 text-2xl leading-8 text-gray-800">
+                We love to shake established thought-patterns and create what
+                has never been attempted before. We take seeds and grow jungles
+              </p>
+              <div className="flex space-x-6">
+                {social.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className="text-gray-400 hover:text-gray-500"
+                  >
+                    <span className="sr-only">{item.name}</span>
+                    <item.icon className="h-6 w-6" aria-hidden="true" />
+                  </a>
+                ))}
+              </div>
+            </div>
+            <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
+              <svg
+                className="relative left-[calc(50%+3rem)] h-[21.1875rem] max-w-none -translate-x-1/2 sm:left-[calc(50%+36rem)] sm:h-[42.375rem]"
+                viewBox="0 0 1155 678"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill="url(#ecb5b0c9-546c-4772-8c71-4d3f06d544bc)"
+                  fillOpacity=".3"
+                  d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z"
+                />
+                <defs>
+                  <linearGradient
+                    id="ecb5b0c9-546c-4772-8c71-4d3f06d544bc"
+                    x1="1155.49"
+                    x2="-78.208"
+                    y1=".177"
+                    y2="474.645"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stopColor="#9089FC" />
+                    <stop offset={1} stopColor="#FF80B5" />
+                  </linearGradient>
+                </defs>
+              </svg>
             </div>
           </div>
-          <div className="mt-12 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 className="text-base font-medium text-gray-900">
-                  Visit Us
-                </h3>
-                <ul role="list" className="mt-4 space-y-4">
-                  {navigation.solutions.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-base text-gray-500 hover:text-gray-900"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mt-12 md:mt-0">
-                <h3 className="text-base font-medium text-gray-900">Contact</h3>
-                <ul role="list" className="mt-4 space-y-4">
-                  {navigation.support.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-base text-gray-500 hover:text-gray-900"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 className="text-base font-medium text-gray-900">
-                  Company
-                </h3>
-                <ul role="list" className="mt-4 space-y-4">
-                  {navigation.company.map((item) => (
-                    <li key={item.name}>
-                      <Link to={item.href} className="text-base text-gray-500 hover:text-gray-900">
-                      {item.name}
-                      </Link>
-                      {/* <a
-                        href={item.href}
-                        className="text-base text-gray-500 hover:text-gray-900"
-                      >
-                        {item.name}
-                      </a> */}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mt-12 md:mt-0">
-                <h3 className="text-base font-medium text-gray-900">Services</h3>
-                <ul role="list" className="mt-4 space-y-4">
-                  {navigation.legal.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-base text-gray-500 hover:text-gray-900"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="mt-12 border-t border-gray-200 pt-8">
-          <p className="text-base text-gray-400 xl:text-center">
-            &copy; 2023 Prototype, Inc. All rights reserved.
-          </p>
         </div>
       </div>
-    </footer>
+    </main>
   );
 };
 
-const mapStateToProps = (state) => ({});
-
-export default connect(mapStateToProps, {})(Footer);
+export default ServicesHeader;

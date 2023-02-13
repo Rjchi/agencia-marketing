@@ -68,7 +68,7 @@ const BlogList = () => {
 
   return (
     <div className="bg-white px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28">
-      <div className="relative mx-auto max-w-lg divide-y-2 divide-gray-200 lg:max-w-7xl">
+      <div className="relative mx-auto max-w-lg divide-y-2 divide-gray-200 lg:max-w-6xl">
         <div>
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Recent publications
@@ -78,9 +78,9 @@ const BlogList = () => {
             massa dictumst amet. Sapien tortor lacus arcu.
           </p>
         </div>
-        <div className="mt-12 grid gap-16 pt-12 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12">
+        <div className="mt-12 grid gap-16 pt-12 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
           {posts.map((post) => (
-            <div key={post.title}>
+            <div key={post.title} className="bg-gray-50 p-4 rounded-md">
               <div>
                 <a href={post.category.href} className="inline-block">
                   <span
