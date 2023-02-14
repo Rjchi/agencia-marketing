@@ -3,7 +3,7 @@
 -2. https://hackmd.io/@hO2SXm4mSWyG_s4Yjj73sA/SJcbciEFo
 -1. Buscar un dominio gratis o comprarlo
 
-DJANGO (install extension wappalyzer, what font, color picker o finder)
+DJANGO (install extension wappalyzer, what font, color picker o finder, Dimensions(o otra))
 
 0. Pagina para el despliege render.com
 0.1. Verificar el soporte a largo plazo de django (django lts)
@@ -44,7 +44,8 @@ DJANGO (install extension wappalyzer, what font, color picker o finder)
 17. Creamos una nueva carpeta llamada media para poder subir archivos como imagenes,  videos etc que subimos al sitio por defecto
 	si no indicamos donde queremos subirlos(como aws) estos se suben a media
 18. Ahora como estamos en la etapa de la construccion debemos utilizar sqlite, migremos con pyhton manage.py migrate
-19. Ahora para poder ver lo que tenemos en la BD instalamos la extension sqlite o la aplicacion DB Browser for sqlite
+19. Ahora para poder ver lo que tenemos en la BD instalamos la extension sqlite (para activarla fn + f1 SQLite: Open Database)
+	o la aplicacion DB Browser for sqlite
 
 
 
@@ -125,7 +126,46 @@ Nota: Para poner un gif en un boton podemos visitar https://tenor.com/es/ y copi
 46. Ahora en home creamos un archivo llamado LogoCloud.js en home y pegamos el codigo del componente que nos proporciona tailwind UI (el de tailwind_components)
 47. Ahora en tailwind_components/ creamos un nuevo archivo llamado BlogList.jsx
 48. Ahora en home creamos un archivo llamado BlogList.js en home y pegamos el codigo del componente que nos proporciona tailwind UI (el de tailwind_components)
-49. 
+49. Ahora en components/ creamos una nueva carpeta llamada casesy dentro de cases creamos un nuevo archivo llamado CasesHeader.js
+50. Ahora creamos un nuevo archivo llamado cases/CaseList.js
+51. Ahora creamos un nuevo archivo llamado cases/CaseCard.js
+52. Ahora en el cmd de react instalamos npm i @itseasy21/react-elastic-carousel (para hacer que las targetas se puedan pasar con una flechita)
+53. Ahora en components/ creamos una nueva carpeta llamada services
+54. Ahora en sevices/ creamos un archivo llamado ServicesHeader.js
+55. Ahora cremos unos archivos llamados services/ServicesList.js y ServiceCard.js
+56. Ahora en public/index.js pegamos <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	ver https://boxicons.com/ (click -  font - click y pegamos donde lo queramos usar) o
+	ver https://www.flaticon.es/ y ell src lo pasamos por props
+57. Ahora dentro de assets/ creamos una carpeta llamada services/ (dentro de ella vamos a poner en este caso una imagen)
+58. Ahora en components/ creamos una nueva carpeta llamada about/ y dentro de ella un archivo llamado AboutHeader.js
+59. Ahora creamos un archivo en tailwind_contents/ llamado ContentTes.jsx y pegamos el codigo que nos proporciona tailwind UI
+60. Ahora en about/ creamos un nuevo archivo llamado AboutTestStats.js
+61. Ahora en about/ creamos un nuevo archivo llamado AboutImages.js
+62. Ahora en about/ creamos un nuevo archivo llamado AboutClients.js
+63. Ahora en tailwind_components/ creamos un nuevo archivo llamdo OLogoCloud.jsx y pegamos el codigo que nos proporciona tailwind UI
+64. Ahora en about/ creamos un archivo llamado AboutFeatures.js
+65. Ahora en tailwind_components/ cramos un nuevo archivo llamado AboutFeatures.jsx y pegamos el codigo que nos proporciona tailwind UI
+66. Ahora en about/ creamos un archivo llamado AboutTeam.js
+67. Ahora dentro de components/ creamos una nueva carpeta llamada careers/ y dentro de ella creamos un archivo llamado CareersHeader.js (promo.jsx)
+68. Ahora en tailwind_components/ creamos un archivo llamado testimonial.jsx
+69. Ahora en careers/ creamos un nuevo archivo llamado CareersTestimonial.js
+70. Ahora en careers/ creamos un archivo llamado CareersLogoCloud.js
+71. ..."""...
+72. Para hacer el menu responsive ver https://headlessui.com/
+73. 
+74. 
+75. 
+76. 
+77. 
+78. 
+79. 
+
+
+
+
+
+
+
 
 
 
