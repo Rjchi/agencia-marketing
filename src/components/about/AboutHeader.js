@@ -66,6 +66,8 @@ const AboutHeader = () => {
   return (
     <main>
       <div className="relative px-6 lg:px-8">
+        {/* Con esto validamos si esta en lg pongame esto sino pongame max-auto (lee al reves) */}
+        {/* En caso de tenerlo mx-12 max-w-full agregar  max-auto lg:mx-12 max-w-full */}
         <div className="mx-auto max-w-5xl xl:pt-40 xl:pb-30 lg:pt-40 lg:pb-48 pt-24 pb-12">
           <div>
             <div>

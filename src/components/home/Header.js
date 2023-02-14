@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <main>
       <div className="relative px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl xl:pt-40 xl:pb-30 lg:pt-56 lg:pb-48 pt-24 pb-12">
+        <div className="mx-auto max-w-5xl xl:pt-40 xl:pb-30 lg:pt-56 lg:pb-48 pt-24 pb-12">
           <div>
             <div>
               <h1 className="text-4xl font-semibold tracking-tight pb-20 sm:text-center sm:text-7xl">
