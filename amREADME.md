@@ -1,5 +1,10 @@
 # agencia_marketing
 
+Nota: Instalar potsman
+
+-4. Para crear el icono utilizaremos https://web3.storage/ aqui nos crearemos una cuenta y 
+	subiremos una img (esta img quedara publica en internet(Cuidado))
+-3. Ver https://web.dev/add-manifest/  (esto es para el manifest.json)
 -2. https://hackmd.io/@hO2SXm4mSWyG_s4Yjj73sA/SJcbciEFo
 -1. Buscar un dominio gratis o comprarlo
 
@@ -46,6 +51,9 @@ DJANGO (install extension wappalyzer, what font, color picker o finder, Dimensio
 18. Ahora como estamos en la etapa de la construccion debemos utilizar sqlite, migremos con pyhton manage.py migrate
 19. Ahora para poder ver lo que tenemos en la BD instalamos la extension sqlite (para activarla fn + f1 SQLite: Open Database)
 	o la aplicacion DB Browser for sqlite
+------------------------------------------------------------------------------------------------------------------------------------- 
+
+
 
 
 
@@ -152,13 +160,25 @@ Nota: Para poner un gif en un boton podemos visitar https://tenor.com/es/ y copi
 70. Ahora en careers/ creamos un archivo llamado CareersLogoCloud.js
 71. ..."""...
 72. Para hacer el menu responsive ver https://headlessui.com/
-73. 
-74. 
-75. 
-76. 
-77. 
-78. 
-79. 
+73. Ahora instalamos npm i react-helmet (para hacer el cambio de la informacion que los meta tag requieren para leer el sitio, manipulacion del SEO)
+74. Tambien instalamos npm i react-helmet-async
+75. Ahora instalamos npm i framer-motion (para hacer animaciones)
+76. Ahora en src/ creamos un nuevo archivo llamada AnimatedRoutes.js
+77. Ahora solo quedan los detalles del proyecto (esteticos)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
