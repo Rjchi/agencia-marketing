@@ -68,9 +68,9 @@ const CasesList = () => {
     // Esto es una validacion si el width es muy pequeño se muestra un numero de items
     // en caso contrario se muestran mas
     { width: 1, itemsToShow: 1, itemsToScroll: 1 },
-    { width: 350, itemsToShow: 1, itemsToScroll: 2, pagination: false },
-    { width: 1000, itemsToShow: 2, itemsToScroll: 2 },
-    { width: 1280, itemsToShow: 3, itemsToScroll: 2 },
+    { width: 350, itemsToShow: 1, itemsToScroll: 1, pagination: false },
+    { width: 1000, itemsToShow: 2, itemsToScroll: 1 },
+    { width: 1280, itemsToShow: 3, itemsToScroll: 1 },
     // { width: 1450, itemsToShow: 5 },
     // { width: 1750, itemsToShow: 6 },
   ];
@@ -89,7 +89,7 @@ const CasesList = () => {
           itemPadding={[0, 38]}
         >
           {posts.map((post, index) => (
-            <CaseCard index={index} data={post} />
+            <CaseCard key={post.id} index={index} data={post} />
           ))}
         </Carousel>
       </div>
