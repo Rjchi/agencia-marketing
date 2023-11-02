@@ -2,12 +2,19 @@
 
 import { connect } from 'react-redux';
 
+// Y este para las animaciones
+import { motion } from 'framer-motion'
+
 // Le pasamos una propiedad llamada children(ya que layout va a ser el contendor padre)
 const Layout = ({children}) => {
     return (
-        <div>
+        <motion.div
+        initial={{opacity: 0, transition: {duration: 0.4}}}
+        animate={{opacity: 1}}
+        exit={{opacity: 0, transition: {duration: 0.4}}}
+        >
             {children}
-        </div>
+        </motion.div>
     )
 }
 

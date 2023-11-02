@@ -1,4 +1,3 @@
-// Con esto estamos trayendo un icono de heroicons similar a un chulo
 import { CheckIcon } from "@heroicons/react/24/outline";
 
 const features = [
@@ -44,7 +43,7 @@ const features = [
   },
 ];
 
-const Features = () => {
+const AboutFeatures = () => {
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-6xl py-16 px-4 sm:px-6 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:py-24 lg:px-8">
@@ -85,4 +84,4 @@ const Features = () => {
   );
 }
 
-export default Features;
+export default AboutFeatures;

@@ -45,3 +45,24 @@
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
 }
+
+/* Estos son los estilos de la flecha del carousel(carrusel) */
+
+.rec.rec-arrow {
+  background-color: #0b1014;
+  color: #eeeeee;
+}
+
+.rec.rec-arrow:hover {
+  background-color: #393b3f;
+}
+
+.rec.rec-arrow:disabled {
+  visibility: hidden;
+}
+
+.rec-carousel-item:focus {
+  outline: none;
+  box-shadow: inset 0 0 1px 1px lightgrey;
+  background-color: #eaeaea;
+}

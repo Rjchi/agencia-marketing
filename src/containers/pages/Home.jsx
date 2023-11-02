@@ -1,5 +1,8 @@
 // My components
 
+import { useEffect } from "react";
+
+// home
 import BlogList from "components/home/BlogList";
 import CTA from "components/home/CTA";
 import Features from "components/home/Features";
@@ -14,6 +17,10 @@ import Navbar from "components/navegation/Navbar";
 import Layout from "hocs/layouts/Layout";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <Layout>
       <Navbar />

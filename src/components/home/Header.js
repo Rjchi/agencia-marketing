@@ -7,15 +7,14 @@ const Header = () => {
   return (
     <main>
       <div className="relative px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl pt-20 pb-32 sm:pt-48 sm:pb-40">
+        <div className="mx-auto max-w-5xl xl:pt-40 xl:pb-30 lg:pt-56 lg:pb-48 pt-24 pb-12">
           <div>
             <div>
-              <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">
+              <h1 className="text-4xl font-semibold tracking-tight pb-20 sm:text-center sm:text-7xl">
                 Agency for <span> </span>
                 <div className="inline-flex m-3" style={{ color: 'purple'}}>
                   <Typewriter
-                    style={{ color: "red" }}
-                    words={["Dreamers", "Entrepreneurs", "Creators", "You!"]}
+                    words={["Dreamers", "Creators", "You!"]}
                     // Con esto hacemos que sea infinito ver documentacion:
                     loop={0}
                     cursor={true}

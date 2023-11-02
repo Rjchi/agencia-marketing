@@ -71,7 +71,7 @@ const UseCases = () => {
             libero labore natus atque, ducimus sed.
           </p>
         </div>
-        <div className="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
+        <div className="mx-auto mt-12 grid max-w-lg gap-10 lg:max-w-6xl lg:grid-cols-2">
           {posts.map((post) => (
             <div
               key={post.title}
